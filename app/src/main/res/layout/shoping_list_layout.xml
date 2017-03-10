@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/shoping_relative"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#E42F47"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/shoping_fh"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/shoping_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar_message"
+            android:id="@+id/shoping_image_btn_xx"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/shoping_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shoping_relative"
+        android:layout_above="@+id/shoping_relative_js"
+        android:divider="#00000000"
+        android:dividerHeight="10dp">
+
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shoping_relative_js"
+        android:layout_above="@+id/shoping_relative_RG">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox_qx"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shoping_text_qx"
+            android:text="全选"
+            android:textSize="20dp"
+            android:textColor="#bebebe"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/checkBox_qx" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shoping_text_hj"
+            android:textSize="20dp"
+            android:text="合计:￥0"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/shoping_btn" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#ffa500"
+            android:text="结算(0)"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:id="@+id/shoping_btn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shoping_text_yf"
+            android:text="不含运费"
+            android:textSize="15dp"
+            android:layout_below="@+id/shoping_text_hj"
+            android:layout_alignEnd="@+id/shoping_text_hj" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shoping_relative_RG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#E42F47"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_home"
+                style="@style/tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawablePadding="@dimen/padding_tab_bottom_drawable"
+                android:drawableTop="@drawable/icon_shop_item_shop_normal"
+                android:text="@string/home_home"
+                android:textSize="@dimen/font_size_tab_item" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></View>
+
+            <RadioButton
+                android:id="@+id/rbtn_category"
+                style="@style/tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/padding_tab_bottom_drawable"
+                android:drawableTop="@drawable/tab_item_category_selector"
+                android:text="@string/home_classify"
+                android:textSize="@dimen/font_size_tab_item" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></View>
+
+            <RadioButton
+                android:id="@+id/rbtn_shopcart"
+                style="@style/tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/padding_tab_bottom_drawable"
+                android:drawableTop="@drawable/icon_shop_item_shopcart_selected"
+                android:text="@string/home_shoppingcar"
+                android:textSize="@dimen/font_size_tab_item" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

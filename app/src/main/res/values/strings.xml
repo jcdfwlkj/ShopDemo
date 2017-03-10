@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShopDemo</string>
+
 
     <string name="title_activity_expandable">ExpandableActivity</string>
     <string name="edit">编辑</string>
@@ -53,4 +53,61 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name">鼎峰科技</string>
+    <string name="home_home">首页</string>
+    <string name="home_classify">分类</string>
+    <string name="home_shoppingcar">购物车</string>
+    <string name="home_scan">扫一扫</string>
+    <string name="home_news">消息</string>
+    <string name="home_brand">品牌</string>
+    <string name="home_preference">特惠</string>
+    <string name="home_recharge">充值</string>
+    <string name="home_more">更多</string>
+    <string name="home_team">团购</string>
+    <string name="home_match">搭配</string>
+    <string name="home_nearby">附近</string>
+    <string name="home_class">类目</string>
+    <string name="home_purchase">限时抢购</string>
+    <string name="home_hot">热门商家</string>
+    <string name="search_hint">请输入搜索内容</string>
+
+    <!-- 商城主界面, 底部bottom tab 高度 -->
+    <dimen name="height_tab_bottom_item">50dip</dimen>
+    <dimen name="padding_tab_bottom_drawable">1.0dip</dimen>
+    <dimen name="font_size_tab_item">9.0sp</dimen>
+    <!--其他高度-->
+    <dimen name="tag_common_margin">8.0dip</dimen>
+    <dimen name="textSizeNormal">12sp</dimen>
+    <dimen name="text_mid_size">14sp</dimen>
+    <dimen name="yipx">1px</dimen>
+
+    黑 2017/3/10 14:35:52
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="tab_bottom">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12px</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Widget"></style>
+    <style name="edit_text" parent="@style/Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_line_write</item>
+        <item name="android:layout_marginLeft">@dimen/tag_common_margin</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+    </style>
+
 </resources>

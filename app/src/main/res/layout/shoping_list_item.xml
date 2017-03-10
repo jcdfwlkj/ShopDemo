@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFF2F2F2">
+
+        <RelativeLayout
+            android:id="@+id/shop_relative_dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff">
+
+            <CheckBox
+                android:id="@+id/checkBox_item_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/shoping_image_item_dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/checkBox_item_dp"
+                android:background="@drawable/timg" />
+
+            <TextView
+                android:id="@+id/shoping_text_dpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/shoping_image_item_dp"
+                android:text="逸川旗舰店"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/shoping_text_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/shoping_text_dpname"
+                android:layout_alignBottom="@+id/shoping_text_dpname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="删除"
+                android:textColor="#ff0000"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/shop_relative_dp">
+
+            <CheckBox
+                android:id="@+id/checkBox_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/shoping_image_sp"
+                android:background="@drawable/image_x"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/checkBox_item_image"
+                android:layout_marginStart="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoping_text_spjj"
+                android:text="2017新款春季男鞋韩版潮运动鞋男休闲鞋增高板鞋冬季跑步鞋子"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/shoping_image_sp"
+                android:layout_toEndOf="@+id/shoping_image_sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoping_text_item_ysfl"
+                android:text="颜色分类：8812黑白;尺码:41"
+                android:textSize="15dp"
+                android:textColor="#FFA6A6A6"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/shoping_text_spjj" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoping_text_xj"
+                android:textSize="15dp"
+                android:text="￥68"
+                android:textColor="#ff0000"
+                android:layout_below="@+id/checkBox_item_image"
+                android:layout_alignStart="@+id/shoping_text_item_ysfl" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoping_text_yj"
+                android:text="￥128"
+                android:textSize="15dp"
+                android:textColor="#FFA6A6A6"
+                android:layout_alignBaseline="@+id/shoping_text_xj"
+                android:layout_alignBottom="@+id/shoping_text_xj"
+                android:layout_toEndOf="@+id/shoping_text_xj"
+                android:layout_marginStart="15dp" />
+            <TextView
+                android:id="@+id/order_paymen_text_jia"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#2fbdaa"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rmwm_dpcd_shape"
+                android:text="+"
+                android:layout_alignTop="@+id/prder_paymen_text_slbk"
+                android:layout_toEndOf="@+id/prder_paymen_text_slbk" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:id="@+id/prder_paymen_text_slbk"
+                android:text="1"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/order_paymen_text_jh"
+                android:layout_alignEnd="@+id/shoping_text_item_ysfl"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/order_paymen_text_jh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textColor="#2fbdaa"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rmwm_dpcd_shape"
+                android:text="-"
+                android:layout_alignBaseline="@+id/shoping_text_yj"
+                android:layout_alignBottom="@+id/shoping_text_yj"
+                android:layout_toStartOf="@+id/prder_paymen_text_slbk" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
