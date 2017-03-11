@@ -1,7 +1,4 @@
 <resources>
-
-
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -18,15 +15,15 @@
         <item name="colorButtonNormal">#33000000</item>
     </style>
 
-    <style name="AppTheme.TabTextAppearance" >
+    <style name="AppTheme.TabTextAppearance">
         <item name="android:textColor">@color/menu_item_tint</item>
         <item name="textAllCaps">false</item>
     </style>
 
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
 
     <style name="tab_bottom">
         <item name="android:ellipsize">marquee</item>
@@ -34,12 +31,13 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:button">@null</item>
-        <item name="android:singleLine">true</item>
         <item name="android:textColor">#000000</item>
         <item name="android:textSize">12px</item>
         <item name="android:layout_weight">1.0</item>
     </style>
+
     <style name="Widget"></style>
+
     <style name="edit_text" parent="@style/Widget">
         <item name="android:focusable">true</item>
         <item name="android:focusableInTouchMode">true</item>
